@@ -1,0 +1,200 @@
+body{
+
+    color: black;
+    background: black;
+    font-size: larger;
+
+}
+
+#container{
+
+    margin-left: 450px;
+    width: 40%;
+    background: white;
+    padding-top: 50px;
+    padding: 60px;
+    font-size: large;
+
+}
+ 
+
+#name{
+
+    border: transparent;
+    border-bottom: 2px solid rgb(224, 222, 222);
+    padding: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    width: 100%;
+    margin-left: -5px;
+    font-size: large;
+
+}
+
+#email{
+
+    border: transparent;
+    outline: none;
+    border-bottom: 2px solid rgb(224, 222, 222);
+    padding: 5px;
+    width: 100%;
+    margin: 25px;
+    margin-left: -1%;
+    font-size: large;
+
+}
+
+ 
+
+#personCount {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+ 
+
+#total{
+
+    border: transparent;
+    outline: none;
+    border-bottom: 2px solid rgb(224, 222, 222)y;
+    width: 620px;
+    font-size: 30px;
+}
+
+#date{
+
+    display: flex;
+    font-size: larger;
+    margin-top: 30px;
+   
+
+}
+
+#date1{
+width: 80px;
+height: 50px;
+border: transparent;
+border-bottom: 2px solid rgb(224, 222, 222);
+font-size: large;
+padding-left: 5%;
+margin-left: 40px;
+
+}
+#date2{
+
+    width: 80px;
+    height: 50px;
+    border: transparent;
+    border-bottom: 2px solid rgb(224, 222, 222);
+    font-size: large;
+    padding-left: 5%;
+    margin-left: 40px;
+}
+#date3{
+    width: 80px;
+    height: 50px;
+    border: transparent;
+    border-bottom: 2px solid rgb(224, 222, 222);
+    font-size: large;
+    padding-left: 5%;
+    margin-left: 15px;
+}
+
+ 
+
+#time{
+    border: transparent;
+    outline: none;
+    font-size: larger;
+    margin-top: 30%;
+
+}
+
+#time1{
+border: transparent;
+border-bottom: 2px solid rgb(224, 222, 222);
+height: 25px;
+width: 80px;
+padding-left: 5%;
+margin-left: 20px;
+font-size: large;
+text-align: center;
+}
+
+ 
+
+#time2{
+
+    border: transparent;
+    border-bottom: 2px solid rgb(224, 222, 222);
+    height: 25px;
+    width: 80px;
+    margin-left: 25px;
+    font-size: large;
+    padding-left: 6%;
+    text-align: center;
+
+}
+
+#time3{
+    border: 0px;
+    border-bottom: 2px solid rgb(224, 222, 222);
+    margin:10% 0% 5% 10%;
+    text-align: center;
+    
+    
+}
+#btnContainer {
+    display: flex;
+    justify-content: center;
+}
+#inc{
+    border: transparent;
+    outline: none;
+    font-size: large;
+    margin: 30px 0px -20px 20px;
+    color: brown;
+    background-color: transparent;
+}
+
+#dec{
+    border: transparent;
+    outline: none;
+    font-size: large;
+    margin: 30px 0px -20px 20px;
+    color: brown;
+    background-color: transparent;
+
+}
+
+
+select{
+    width: 80px;
+    height: 40px;
+    margin-top: 100px;
+    margin-left: 50px;
+    font-size: medium;
+    border-bottom: 1px solid;
+    color: brown;
+}
+
+hr{
+    width: 100%;
+    border: transparent;
+    border-bottom: 2px solid rgb(224, 222, 222);
+    margin-left: 20px;
+
+}
+#btn2{
+
+    color: white;
+    background: black;
+    width: 75%;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 10%;
+}

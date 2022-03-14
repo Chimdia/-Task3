@@ -1,0 +1,514 @@
+<!-- 
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css"/>
+
+     <title>RESERVATION</title>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <form id="form" onsubmit=" validateForm()">
+
+            <div>
+
+                <label for name></label><br>
+
+                <input name = "name" type="text" id="name"  placeholder="Name">  
+
+            </div>
+
+            <div>
+
+                <label for email></label><br>
+
+                <input type="email" id="email"  placeholder="Email">
+
+            </div>
+
+ 
+
+            <div>
+
+                <label for date>Pick a date</label>
+
+                <input name= "month" type="text" id="pickamonth"  placeholder="MM" min="1" max="12">
+
+                <input name= "day" type="text" id="pickaday"  placeholder="DD" min="1" max="31">
+
+                <input name= "year" type="text" id="pickayear"  placeholder="YYYY" min="2022" max="2030">  
+
+            </div>
+
+           
+
+            <div>
+
+                <label for time>Pick a time</label>
+
+                <input name= "hour" type="text" id="time1" id="pickahour" placeholder="09" min="1" max="12">
+
+                <input name= "minutes" type="text" id="pickamin"  placeholder="00" min="00" max="59">
+
+                <select name = "amorpm3" id="picktime">
+
+                    <option value="AM">AM</option>
+
+                    <option value="PM">PM</option>
+
+            </select>  
+
+            </div>
+
+            <div id="numofpersons">
+                <input type="button" value="-" id="dec" onclick="decNumber()">
+                <!-- <label for="display"></label> -->
+                <strong><span id="persons"> 1 person</span></strong>
+                <input type="button" value="+" id="inc" onclick="incNumber()">
+
+
+            </div>
+
+            <hr>
+
+            <div>
+
+                <button class="but" type="submit">MAKE RESERVATION</button>
+
+            </div>
+
+                   
+
+        </form>
+
+    </div>
+
+    <script type="text/javascript">
+
+ 
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=, initial-scale=1.0">
+   <link rel="stylesheet" href="./index.css"/>
+   <title>Reservations</title>
+</head>
+<body>
+   <div id="container">
+      <form id="form" onsubmit="validateform">
+         <div>
+            <label for="name"></label>
+            <input  name="name" type="text" id="name" placeholder="Name">
+         </div>
+         <div>
+            <label for="email"></label>
+               <input name="email" type="email" id="email" placeholder="Email">
+            </div>
+            <div id="pickadate">
+               <label for="date">Pick a date</label>
+               <input type="text" name="month" id="pickamonth" placeholder="MM" min="1" max="12">
+               <input type="text" name="day" id="pickaday" placeholder="DD" min="1" max="31">
+               <input type="text"  name="year" id="pickayear" placeholder="YYYY" min="2022" max="2023">
+            </div>
+            <div id="pickatime">
+               <label for="time">Pick a time</label>
+               <input type="text"  name="hour" id="pickahour" placeholder="09" min="10" max="12">
+               <input type="text" name="minutes" id="pickamin" placeholder="00" min="01" max="59">
+               <select name="amorpm" id="picktime">
+                  <option value="AM">AM</option>
+                  <option value="PM">PM</option>
+               </select>
+            </div>
+            <div>
+      
+            </div>
+            <div class="numofpersons">
+               <input type="button" value="-" id="dec" onclick="decNumber()">
+               <!-- <label for="display"></label> -->
+               <strong><span id="persons"> 1 person</span></strong>
+               <input type="button" value="+" id="inc" onclick="incNumber()">   
+            </div>
+            <div>
+               <hr>
+            </div>
+            <div>
+               <input class="but" type="submit" value="Make Reservation">
+            </div>
+      </form>
+   </div> 
+    <script type="text/javascript">
+
+ 
+// const validateForm = () => {
+
+// let validNameRegex = "^[a-zA-Z]*$";
+
+// let name = document.getElementById("name");
+
+// let email = document.getElementById("email");
+
+// let validDate1Regex = "^[0-9]*$";
+
+// let month= document.getElementById("pickamonth");
+
+// let day = document.getElementById("pickaday");
+
+// let year = document.getElementById("pickayear");
+
+// let hour = document.getElementById("pickahour");
+
+// let minutes = document.getElementById("pickamin");
+
+// let amorpm= document.getElementById("picktime");
+
+// // name
+
+
+//  if(!(name.value.length !== 0 && name.value.match(validNameRegex) && name.value.length > 2) ){
+
+// alert("PLEASE ENTER A VALID NAME ");
+
+// return false;
+
+// }
+
+
+
+// if(!(email.value.length !== 0 )){
+
+// alert("PLEASE ENTER A VALID EMAIL!!");
+
+// return false;
+
+// }
+
+
+
+// if(!(month.value.length !== 0 && month.value.match(validDate1Regex) && month.value <= 12) ){
+
+// alert("PLEASE ENTER A VALID MONTH!!");
+
+// return false;
+
+// }
+
+// if (!(day.value.length !== 0 && day.value.match(validDate1Regex) && day.value < 32)){
+
+// alert("PLEASE ENTER A VALID DATE IN DAYS!!");
+
+// return false;
+
+// }
+
+
+
+// if (!(year.value.length !== 0 && year.value.match(validDate1Regex) && year.value > 2021 )){
+
+// alert("ENTER A VALID YEAR!!");
+
+// return false;
+
+// }
+
+// if(!(hour.value.length !== 0 && hour.value < 13 && hour.value !== 0)){
+
+// alert("ENTER A VALID TIME IN HOUR!!");
+
+// return false;
+
+// }
+
+
+
+// if(!(miutes.value.length !== 0 && minutes.value < 60)){
+
+// alert("ENTER A VALID TIME IN MINUTES");
+
+// return false;
+
+// }
+
+
+
+// if((amorpm.value.length === 0)){
+
+// alert("select AM or PM");
+
+// return false;
+
+// }
+
+
+
+
+
+// // submit form
+
+// alert("form submitted");
+
+// }
+
+//  // counter validation
+
+//  var numofpersons = 1;
+
+   
+
+// function incNumber() {
+
+//     if (numofpersons < 6) {
+
+//         numofpersons = numofpersons+1;
+
+   
+
+//     } else if (numofpersons == 6) {
+
+//         numofpersons = 1;
+
+//     }
+
+//     if(numofpersons == 1) {
+
+
+
+//         document.getElementById("persons").innerHTML = `${numofpersons} Person`;
+
+//     }
+
+//     else {
+
+//         document.getElementById("persons").innerHTML = numofpersons + " People";
+
+
+
+//     }
+
+// }
+
+
+
+// function decNumber() {
+
+//     if (numofpersons > 1) {
+
+//         numofpersons = numofpersons -1;
+
+//     }
+
+//     if(numofpersons == 1) {
+
+
+
+//     document.getElementById("persons").innerHTML = `${numofpersons} Person`;
+//     }
+//     else {
+
+// document.getElementById("persons").innerHTML = numofpersons + " People";
+
+
+
+// }
+// }
+
+
+        // const validateForm = () => {
+
+        //     let validNameRegex = "^[a-zA-Z]*$";
+
+        //     let name = document.getElementById("name");
+
+        //     let email = document.getElementById("email");
+
+        //     let validDate1Regex = "^[0-9]*$";
+
+        //     let month = document.getElementById("pickamonth");
+
+        //     let day = document.getElementById("pickaday");
+
+        //     let year = document.getElementById("pickayear");
+
+        //     let hour = document.getElementById("pickahour");
+
+        //     let minute = document.getElementById("pickamin");
+
+        //     let amorpm = document.getElementById("picktime");
+
+        //     // name
+
+        //     if(!(name.value.length !== 0 && name.value.match(validNameRegex) && name.value.length > 2) ){
+
+        //              alert("name is invalid ");
+
+        //             return false;
+
+        //     }
+
+ 
+
+        //     if(!(email.value.length !== 0 )){
+
+        //         alert("please, enter a valid email!!");
+
+        //         return false;
+
+        //     }
+
+ 
+
+        //     if(!(month.value.length !== 0 && month.value.match(validDate1Regex) && month.value <= 12) ){
+
+        //          alert("ENTER A VALID MONTH!!");
+
+        //          return false;
+
+        // }
+
+        //     if (!(day.value.length !== 0 && day.value.match(validDate1Regex) && day.value < 32)){
+
+        //         alert("ENTER A VALID DATE!!");
+
+        //         return false;
+
+        //     }
+
+ 
+
+        //     if (!(year.value.length !== 0 && year.value.match(validDate1Regex) && year.value > 2021 )){
+
+        //         alert("invalid year!!");
+
+        //         return false;
+
+        //     }
+
+        //     if(!(hour.value.length !== 0 && hour.value < 13 && hour.value !== 0)){
+
+        //         alert("invalid time in hour!!");
+
+        //         return false;
+
+        //     }
+
+ 
+
+        //     if(!(minutes.value.length !== 0 && minutes.value < 60)){
+
+        //         alert("invalid time in minutes");
+
+        //         return false;
+
+        //     }
+
+ 
+
+        //     if((amorpm.value.length === 0)){
+
+        //         alert("select AM or PM");
+
+        //         return false;
+
+        //     }
+
+ 
+
+           
+
+        //     // submit form
+
+        //     alert("form submitted");
+
+        // }
+
+ 
+
+        // // counter validation
+
+        // var numofpersons = 1;
+
+   
+
+        // function incNumber() {
+
+        //     if (numofpersons < 10) {
+
+        //         numofpersons = numofpersons+1;
+
+           
+
+        //     } else if (numofpersons == 10) {
+
+        //         numofpersons = 1;
+
+//             }
+
+//             if(numofpersons == 1) {
+
+ 
+
+//                 document.getElementById("persons").innerHTML = `${numofpersons} Person`;
+
+//             }
+
+//             else {
+
+//                 document.getElementById("persons").innerHTML = numofpersons + " People";
+
+ 
+
+//             }
+
+//         }
+
+   
+
+//         function decNumber() {
+
+//             if (numofpersons > 1) {
+
+//                numofpersons = numofpersons -1;
+
+//             }
+
+//             if(numofpersons == 1) {
+
+ 
+
+//             document.getElementById("persons").innerHTML = `${personCount} Person`;
+//             }
+//             else {
+
+// document.getElementById("persons").innerHTML = personCount + " People";
+
+
+
+// }
+// }
+
+//     </script>  
+//    </body>
+// </html> 
